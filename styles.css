@@ -1,0 +1,135 @@
+body {
+    background-color: #0d1a2d;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    font-family: "Outfit"
+}
+
+.mainCard {
+    border-radius: 1rem;
+    background-color: #15273f;
+    width: 25rem;
+    margin: 0 auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mainCard__imgcontainer {
+    display: flex;
+    justify-content: center;  
+    position: relative;  
+}
+
+.mainCard__imgcontainer__imgEquili {
+    opacity: 1;     
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 88%;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.mainCard__imgcontainer__eyehover {
+transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;   
+}
+
+.mainCard__imgcontainer:hover .mainCard__imgcontainer__imgEquili {
+    opacity: 0.3;     
+    border: 2px solid #32dcd9;  
+  }
+
+.mainCard__imgcontainer:hover .mainCard__imgcontainer__eyehover {
+    opacity: 0.8;  
+}
+
+.mainCard__description {
+    margin-left: 1.8rem;
+    width: 85.8%;
+}
+.mainCard__description__title {
+    color: #e5ebf7;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.mainCard__description__title:hover {
+    cursor: pointer;
+    color: #32dcd9;    
+}
+
+.mainCard__description__content {
+    color: #7d93b9;
+    font-size: 1.1rem;
+}
+
+.mainCard__description__priceAndTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainCard__description__priceAndTime__price {
+    color: #32dcd9;
+}
+
+.mainCard__description__priceAndTime__price__text {
+    margin-top: -23px;
+    margin-left: 20px;
+}
+
+.mainCard__description__priceAndTime__time {
+    color: #829dcb;
+}
+
+.mainCard__description__priceAndTime__time__text {
+    margin-top: -23px;
+    margin-left: 22px;
+}
+
+.mainCard__border {
+    border: 0.1px solid #25374f;
+    margin: 1rem 0rem;   
+}
+
+.mainCard__author {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.mainCard__author__avatar {
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 0.1rem solid white;;
+}
+
+.mainCard__author__name {
+    margin-top: 0.5rem;
+    color: #7f92af;
+}
+
+.mainCard__author__name--white {
+    color: #c9d0da;
+}
+
+.mainCard__author__name--white:hover {
+    cursor: pointer;
+    color: #32dcd9;    
+}
+
+@media (max-width: 550px) {   
+	.mainCard {
+        width: 80%;         
+    }	
+}
